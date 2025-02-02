@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styling */
+body {
+    @apply bg-gray-100 text-gray-900;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Chat Container */
+.chat-container {
+    @apply max-w-2xl mx-auto bg-white shadow-md rounded-lg p-4 mt-6;
+}
+
+/* Messages Area */
+.messages {
+    @apply h-96 overflow-y-auto p-2 border border-gray-300 rounded-md bg-gray-50;
+}
+
+/* Message Input */
+.message-input {
+    @apply flex items-center gap-2 mt-4;
+}
+
+.message-input input {
+    @apply flex-grow p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+.message-input button {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    @apply text-sm text-gray-500 italic mt-2;
+}
+
+/* Sent Messages */
+.message {
+    @apply flex items-center p-2 my-1 rounded-lg;
+}
+
+.message.sent {
+    @apply bg-blue-100 text-blue-800 self-end;
+}
+
+.message.received {
+    @apply bg-gray-200 text-gray-800 self-start;
+}
+
+/* Username Badge */
+.username-badge {
+    @apply text-sm font-semibold text-gray-600;
+}
+
+/* User List */
+.user-list {
+    @apply p-2 border rounded-md bg-gray-50 mt-4;
+}
